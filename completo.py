@@ -6,7 +6,7 @@ from pydantic import BaseModel, field_validator, ValidationError
 import json
 
 # === INICIO NOVO ===
-
+##isso é um teste
 # === FIM NOVO ===
 
 
