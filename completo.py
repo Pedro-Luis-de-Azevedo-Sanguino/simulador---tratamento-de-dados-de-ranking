@@ -5,11 +5,6 @@ if hasattr(sys.stdout, "reconfigure"):
 from pydantic import BaseModel, field_validator, ValidationError
 import json
 
-# === INICIO NOVO ===
-##isso é um teste
-# === FIM NOVO ===
-
-
 class Jogador(BaseModel):
     Nickname: str
     Mortes: int
@@ -46,11 +41,6 @@ def sanitizar_registro(registro: dict) -> dict:
             print(f"[AVISO] '{registro.get('Nickname', '?')}': campo '{campo}' era {registro[campo]}, corrigido para 0.")
             registro[campo] = 0
     return registro
-
-
-# === INICIO NOVO ===
-
-# === FIM NOVO ===
 
 
 if __name__ == "__main__":
